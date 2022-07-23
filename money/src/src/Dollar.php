@@ -6,6 +6,7 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar
 {
+    private int $amount = 10;
 
     /**
      * @param int $int
@@ -20,5 +21,6 @@ class Dollar
 
     public function amount()
     {
+        return $this->amount;
     }
 }
