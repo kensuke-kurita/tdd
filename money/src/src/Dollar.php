@@ -6,7 +6,7 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar
 {
-    private int $amount = 5*2;
+    private int $amount;
 
     /**
      * @param int $int
@@ -17,6 +17,7 @@ class Dollar
 
     public function times(int $int)
     {
+        $this->amount = 5 * 2;
     }
 
     public function amount()
