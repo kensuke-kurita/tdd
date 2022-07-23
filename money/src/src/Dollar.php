@@ -9,15 +9,16 @@ class Dollar
     private int $amount;
 
     /**
-     * @param int $int
+     * @param int $amount
      */
-    public function __construct(int $int)
+    public function __construct(int $amount)
     {
+        $this->amount = $amount;
     }
 
     public function times(int $int)
     {
-        $this->amount = 5 * 2;
+        $this->amount = $this->amount * 2;
     }
 
     public function amount()
