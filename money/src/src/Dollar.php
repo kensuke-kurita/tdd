@@ -17,4 +17,8 @@ class Dollar
     public function times(int $int)
     {
     }
+
+    public function amount()
+    {
+    }
 }
