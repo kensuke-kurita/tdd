@@ -3,7 +3,7 @@
         'name' => 'kensuke-kurita/tdd',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '66175dbeb14e4d40c194c99467bb5b77c223ae18',
+        'reference' => '3f6b302cedb06ac879cbf945a380fd8d18d34b25',
         'type' => 'n',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'kensuke-kurita/tdd' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '66175dbeb14e4d40c194c99467bb5b77c223ae18',
+            'reference' => '3f6b302cedb06ac879cbf945a380fd8d18d34b25',
             'type' => 'n',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

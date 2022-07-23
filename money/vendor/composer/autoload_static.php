@@ -27,7 +27,8 @@ class ComposerStaticInitf4f709d737d12d96dfe44ae38d05214c
         ),
         'K' => 
         array (
-            'KensukeKurita\\Tdd\\' => 18,
+            'KensukeKurita\\Tdd\\Money\\Tests\\' => 30,
+            'KensukeKurita\\Tdd\\Money\\' => 24,
         ),
         'D' => 
         array (
@@ -55,7 +56,11 @@ class ComposerStaticInitf4f709d737d12d96dfe44ae38d05214c
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'KensukeKurita\\Tdd\\' => 
+        'KensukeKurita\\Tdd\\Money\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'KensukeKurita\\Tdd\\Money\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
