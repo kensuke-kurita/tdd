@@ -18,7 +18,7 @@ class Dollar
 
     public function times(int $manipulator): void
     {
-        $this->amount = $this->amount * $manipulator;
+        $this->amount *= $manipulator;
     }
 
     public function amount(): int
