@@ -1,0 +1,10 @@
+{
+    "name": "kensuke-kurita/tdd",
+    "type": "n",
+    "autoload": {
+        "psr-4": {
+            "KensukeKurita\\Tdd\\": "src/"
+        }
+    },
+    "require": {}
+}
