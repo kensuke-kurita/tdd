@@ -3,7 +3,12 @@
     "type": "n",
     "autoload": {
         "psr-4": {
-            "KensukeKurita\\Tdd\\": "src/"
+            "KensukeKurita\\Tdd\\Money\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KensukeKurita\\Tdd\\Money\\Tests\\": "tests/"
         }
     },
     "require": {
