@@ -13,4 +13,8 @@ class Dollar
     public function __construct(int $int)
     {
     }
+
+    public function times(int $int)
+    {
+    }
 }
