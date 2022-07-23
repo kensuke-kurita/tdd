@@ -16,12 +16,12 @@ class Dollar
         $this->amount = $amount;
     }
 
-    public function times(int $int)
+    public function times(int $manipulator): void
     {
-        $this->amount = $this->amount * 2;
+        $this->amount = $this->amount * $manipulator;
     }
 
-    public function amount()
+    public function amount(): int
     {
         return $this->amount;
     }
