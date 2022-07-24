@@ -6,7 +6,7 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar
 {
-    private int $amount;
+    public int $amount;
 
     /**
      * @param int $amount
