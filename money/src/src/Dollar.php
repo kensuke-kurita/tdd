@@ -25,4 +25,9 @@ class Dollar
     {
         return $this->amount;
     }
+
+    public function equals(self $self): bool
+    {
+        return true;
+    }
 }

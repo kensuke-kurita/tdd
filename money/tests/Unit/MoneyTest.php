@@ -18,6 +18,6 @@ class MoneyTest extends TestCase
     }
 
     public function testEquality(){
-        self::assertTrue(New Dollar(5)->equals(New Dollar(5)));
+        self::assertTrue((New Dollar(5))->equals(New Dollar(5)));
     }
 }
