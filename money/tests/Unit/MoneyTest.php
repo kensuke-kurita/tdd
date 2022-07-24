@@ -13,5 +13,7 @@ class MoneyTest extends TestCase
         $five = New Dollar(5);
         $five->times(2);
         self::assertEquals(10, $five->amount());
+        $five->times(3);
+        self::assertEquals(15, $five->amount());
     }
 }
