@@ -18,8 +18,7 @@ class Dollar
 
     public function times(int $manipulator): ?self
     {
-        $this->amount *= $manipulator;
-        return null;
+        return new self($this->amount * $manipulator);
     }
 
     public function amount(): int
