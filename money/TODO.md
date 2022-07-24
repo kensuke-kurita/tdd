@@ -6,3 +6,7 @@ TODOリスト
 - [ ] amount を private にする
 - [x] Dollarの副作用どうする？
 - [ ] Moneyの丸め処理どうする？
+- [x] equals
+- [ ] hashCode
+- [ ] null との等価性比較
+- [ ] 他のオブジェクトとの等価性比較
