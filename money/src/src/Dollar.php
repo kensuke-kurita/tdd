@@ -16,9 +16,10 @@ class Dollar
         $this->amount = $amount;
     }
 
-    public function times(int $manipulator): void
+    public function times(int $manipulator): ?self
     {
         $this->amount *= $manipulator;
+        return null;
     }
 
     public function amount(): int
