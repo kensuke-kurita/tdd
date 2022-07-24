@@ -26,8 +26,8 @@ class Dollar
         return $this->amount;
     }
 
-    public function equals(self $self): bool
+    public function equals(self $that): bool
     {
-        return true;
+        return $this->amount === $that->amount();
     }
 }
