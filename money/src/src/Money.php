@@ -6,5 +6,5 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Money
 {
-
+    protected int $amount;
 }

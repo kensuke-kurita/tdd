@@ -6,7 +6,6 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar extends Money
 {
-    private int $amount;
 
     /**
      * @param int $amount
