@@ -10,6 +10,12 @@ class Money
 
     public function equals(self $that): bool
     {
-        return $this->amount === $that->amount();
+        return $this->amount === $that->amount()
+            && $this::class === $that::class;
+    }
+
+    public function dollar(int $amount):Dollar
+    {
+        return New Dollar($amount);
     }
 }
