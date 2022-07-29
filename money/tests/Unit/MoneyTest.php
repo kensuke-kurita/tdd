@@ -22,7 +22,7 @@ class MoneyTest extends TestCase
         $this->assertFalse((New Dollar(5))->equals(New Dollar(6)));
         $this->assertTrue((New Franc(5))->equals(New Franc(5)));
         $this->assertFalse((New Franc(5))->equals(New Franc(6)));
-
+        $this->assertFalse((new Dollar(5))->equals(new Franc(5)));
     }
 
     public function testFrancMultiplication(){
