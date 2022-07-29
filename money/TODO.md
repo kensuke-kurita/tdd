@@ -14,4 +14,6 @@ TODOリスト
 - [ ] DollarとFrancの重複
 - [x] equalsの一般化
 - [ ] timesの一般化
-- [ ] Franc と Dollar を比較する
+- [x] Franc と Dollar を比較する
+- [ ] 通貨の概念
+- [ ] testFrancMultiplicationを削除する？
