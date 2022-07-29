@@ -15,7 +15,7 @@ class Dollar extends Money
         $this->amount = $amount;
     }
 
-    public function times(int $manipulator): ?Money
+    public function times(int $manipulator): Money
     {
         return new self($this->amount * $manipulator);
     }
