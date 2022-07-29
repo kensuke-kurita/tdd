@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-class Franc
+class Franc extends Money
 {
-    private int $amount;
-
     /**
      * @param int $amount
      */
