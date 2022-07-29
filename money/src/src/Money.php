@@ -14,8 +14,13 @@ class Money
             && $this::class === $that::class;
     }
 
-    public function dollar(int $amount):Dollar
+    public static function dollar(int $amount):Money
     {
         return New Dollar($amount);
+    }
+
+    public static function franc(int $amount):Money
+    {
+        return New Franc($amount);
     }
 }

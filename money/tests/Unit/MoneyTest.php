@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 class MoneyTest extends TestCase
 {
     public function testMultiplication(){
-        $five = (New Money)->dollar(5);
+        $five = Money::dollar(5);
         $this->assertObjectEquals(New Dollar(10), $five->times(2));
         $this->assertObjectEquals(New Dollar(15), $five->times(3));
     }
@@ -26,7 +26,7 @@ class MoneyTest extends TestCase
     }
 
     public function testFrancMultiplication(){
-        $five = New Franc(5);
+        $five = Money::franc(5);
         $this->assertObjectEquals(New Franc(10), $five->times(2));
         $this->assertObjectEquals(New Franc(15), $five->times(3));
     }
