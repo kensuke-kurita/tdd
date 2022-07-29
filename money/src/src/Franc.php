@@ -25,9 +25,4 @@ class Franc
     {
         return $this->amount;
     }
-
-    public function equals(self $that): bool
-    {
-        return $this->amount === $that->amount();
-    }
 }
