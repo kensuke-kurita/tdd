@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-class Dollar
+class Dollar extends Money
 {
-    private int $amount;
 
     /**
      * @param int $amount
@@ -24,10 +23,5 @@ class Dollar
     public function amount(): int
     {
         return $this->amount;
-    }
-
-    public function equals(self $that): bool
-    {
-        return $this->amount === $that->amount();
     }
 }
