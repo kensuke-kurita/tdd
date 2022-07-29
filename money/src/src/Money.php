@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-class Money
+abstract class Money
 {
     protected int $amount;
+
+    abstract public function times(int $multiplier): self;
 
     public function equals(self $that): bool
     {
