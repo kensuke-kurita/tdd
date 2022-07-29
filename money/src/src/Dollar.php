@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-class Dollar
+class Dollar extends Money
 {
     private int $amount;
 
