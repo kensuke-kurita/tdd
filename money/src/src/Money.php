@@ -12,4 +12,9 @@ class Money
     {
         return $this->amount === $that->amount();
     }
+
+    public function dollar(int $amount):Dollar
+    {
+        return New Dollar($amount);
+    }
 }

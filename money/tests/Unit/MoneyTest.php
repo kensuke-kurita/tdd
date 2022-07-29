@@ -6,12 +6,13 @@ namespace KensukeKurita\Tdd\Money\Tests\Unit;
 
 use KensukeKurita\Tdd\Money\src\Dollar;
 use KensukeKurita\Tdd\Money\src\Franc;
+use KensukeKurita\Tdd\Money\src\Money;
 use PHPUnit\Framework\TestCase;
 
 class MoneyTest extends TestCase
 {
     public function testMultiplication(){
-        $five = New Dollar(5);
+        $five = (New Money)->dollar(5);
         $this->assertObjectEquals(New Dollar(10), $five->times(2));
         $this->assertObjectEquals(New Dollar(15), $five->times(3));
     }
