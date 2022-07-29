@@ -7,4 +7,9 @@ namespace KensukeKurita\Tdd\Money\src;
 class Money
 {
     protected int $amount;
+
+    public function equals(self $that): bool
+    {
+        return $this->amount === $that->amount();
+    }
 }
