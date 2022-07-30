@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-abstract class Money
+class Money
 {
     protected int $amount;
     protected string $currency;
-
-    abstract public function times(int $multiplier): self;
 
     public function __construct(int $amount, string $currency)
     {

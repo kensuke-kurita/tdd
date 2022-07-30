@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\Tests\Unit;
 
+use KensukeKurita\Tdd\Money\src\Franc;
 use KensukeKurita\Tdd\Money\src\Money;
 use PHPUnit\Framework\TestCase;
 
@@ -32,5 +33,10 @@ class MoneyTest extends TestCase
     public function testCurrency(){
         $this->assertEquals('USD', Money::dollar(1, "USD")->currency());
         $this->assertEquals('CHF', Money::franc(1, "CHF")->currency());
+    }
+
+    public function testDifferentClassEquality()
+    {
+        $this->assertTrue((new Money(10, "CHF"))->equals(new Franc(10, "CHF")));
     }
 }
