@@ -6,12 +6,15 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Franc extends Money
 {
+    private string $currency;
+
     /**
      * @param int $amount
      */
     public function __construct(int $amount)
     {
         $this->amount = $amount;
+        $this->currency = 'CHF';
     }
 
     public function times(int $manipulator): Money
@@ -22,5 +25,10 @@ class Franc extends Money
     public function amount(): int
     {
         return $this->amount;
+    }
+
+    public function currency(): string
+    {
+        return $this->currency;
     }
 }
