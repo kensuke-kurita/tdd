@@ -28,16 +28,21 @@ class Money
 
     public static function dollar(int $amount, string $currency):Money
     {
-        return New Dollar($amount, $currency);
+        return New Money($amount, $currency);
     }
 
     public static function franc(int $amount, string $currency):Money
     {
-        return New Franc($amount, $currency);
+        return New Money($amount, $currency);
     }
 
     public function currency(): string
     {
         return $this->currency;
+    }
+
+    public function amount(): int
+    {
+        return $this->amount;
     }
 }
