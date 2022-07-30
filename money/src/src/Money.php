@@ -15,6 +15,11 @@ class Money
         $this->currency = $currency;
     }
 
+    public function times(int $manipulator): Money
+    {
+        return new Money($this->amount * $manipulator, $this->currency);
+    }
+
     public function equals(self $that): bool
     {
         return $this->amount === $that->amount()

@@ -11,11 +11,6 @@ class Franc extends Money
         parent::__construct($amount, $currency);
     }
 
-    public function times(int $manipulator): Money
-    {
-        return new self($this->amount * $manipulator, 'CHF');
-    }
-
     public function amount(): int
     {
         return $this->amount;
