@@ -6,6 +6,11 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar extends Money
 {
+    public function __construct(int $amount, string $currency)
+    {
+        parent::__construct($amount, $currency);
+    }
+
     public function times(int $manipulator): Money
     {
         return new self($this->amount * $manipulator, $this->currency);
