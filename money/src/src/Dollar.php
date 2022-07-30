@@ -6,8 +6,6 @@ namespace KensukeKurita\Tdd\Money\src;
 
 class Dollar extends Money
 {
-    private string $currency;
-
     /**
      * @param int $amount
      */
@@ -25,10 +23,5 @@ class Dollar extends Money
     public function amount(): int
     {
         return $this->amount;
-    }
-
-    public function currency(): string
-    {
-        return $this->currency;
     }
 }

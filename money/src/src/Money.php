@@ -7,6 +7,7 @@ namespace KensukeKurita\Tdd\Money\src;
 abstract class Money
 {
     protected int $amount;
+    protected string $currency;
 
     abstract public function times(int $multiplier): self;
 
@@ -26,5 +27,8 @@ abstract class Money
         return New Franc($amount);
     }
 
-    abstract public function currency(): string;
+    public function currency(): string
+    {
+        return $this->currency;
+    }
 }
