@@ -11,6 +11,12 @@ abstract class Money
 
     abstract public function times(int $multiplier): self;
 
+    public function __construct(int $amount, string $currency)
+    {
+        $this->amount = $amount;
+        $this->currency = $currency;
+    }
+
     public function equals(self $that): bool
     {
         return $this->amount === $that->amount()
