@@ -17,9 +17,9 @@ abstract class Money
             && $this::class === $that::class;
     }
 
-    public static function dollar(int $amount):Money
+    public static function dollar(int $amount, string $currency):Money
     {
-        return New Dollar($amount);
+        return New Dollar($amount, "USD");
     }
 
     public static function franc(int $amount):Money
