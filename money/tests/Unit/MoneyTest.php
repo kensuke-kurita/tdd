@@ -18,19 +18,19 @@ class MoneyTest extends TestCase
     public function testEquality(){
         $this->assertTrue(Money::dollar(5, "USD")->equals(Money::dollar(5, "USD")));
         $this->assertFalse(Money::dollar(5, "USD")->equals(Money::dollar(6, "USD")));
-        $this->assertTrue((Money::franc(5))->equals(Money::franc(5)));
-        $this->assertFalse((Money::franc(5))->equals(Money::franc(6)));
-        $this->assertFalse((Money::dollar(5, "USD"))->equals(Money::franc(5)));
+        $this->assertTrue((Money::franc(5, "CHF"))->equals(Money::franc(5, "CHF")));
+        $this->assertFalse((Money::franc(5, "CHF"))->equals(Money::franc(6, "CHF")));
+        $this->assertFalse((Money::dollar(5, "USD"))->equals(Money::franc(5, "CHF")));
     }
 
     public function testFrancMultiplication(){
-        $five = Money::franc(5);
-        $this->assertObjectEquals(Money::franc(10), $five->times(2));
-        $this->assertObjectEquals(Money::franc(15), $five->times(3));
+        $five = Money::franc(5, "CHF");
+        $this->assertObjectEquals(Money::franc(10, "CHF"), $five->times(2));
+        $this->assertObjectEquals(Money::franc(15, "CHF"), $five->times(3));
     }
 
     public function testCurrency(){
         $this->assertEquals('USD', Money::dollar(1, "USD")->currency());
-        $this->assertEquals('CHF', Money::franc(1)->currency());
+        $this->assertEquals('CHF', Money::franc(1, "CHF")->currency());
     }
 }

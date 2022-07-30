@@ -22,9 +22,9 @@ abstract class Money
         return New Dollar($amount, "USD");
     }
 
-    public static function franc(int $amount):Money
+    public static function franc(int $amount, string $currency):Money
     {
-        return New Franc($amount);
+        return New Franc($amount, "CHF");
     }
 
     public function currency(): string
