@@ -13,7 +13,7 @@ class Franc extends Money
 
     public function times(int $manipulator): Money
     {
-        return Money::franc($this->amount * $manipulator, $this->currency);
+        return new self($this->amount * $manipulator, 'CHF');
     }
 
     public function amount(): int

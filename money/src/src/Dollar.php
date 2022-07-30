@@ -13,7 +13,7 @@ class Dollar extends Money
 
     public function times(int $manipulator): Money
     {
-        return Money::dollar($this->amount * $manipulator, $this->currency);
+        return new self($this->amount * $manipulator, 'USD');
     }
 
     public function amount(): int
