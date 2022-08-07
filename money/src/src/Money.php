@@ -45,4 +45,9 @@ class Money
     {
         return $this->amount;
     }
+
+    public function plus(Money $that):self
+    {
+        return self::dollar($this->amount + $that->amount());
+    }
 }
