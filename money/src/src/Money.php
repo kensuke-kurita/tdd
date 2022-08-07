@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KensukeKurita\Tdd\Money\src;
 
-class Money
+class Money implements Expression
 {
     protected int $amount;
     protected string $currency;
@@ -46,7 +46,7 @@ class Money
         return $this->amount;
     }
 
-    public function plus(Money $that):self
+    public function plus(Money $that): Expression
     {
         return self::dollar($this->amount + $that->amount());
     }
