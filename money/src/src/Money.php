@@ -46,8 +46,8 @@ class Money implements Expression
         return $this->amount;
     }
 
-    public function plus(Money $that): Expression
+    public function plus(Money $augend): Expression
     {
-        return self::dollar($this->amount + $that->amount());
+        return new Sum($this, $augend);
     }
 }
