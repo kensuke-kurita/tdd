@@ -26,14 +26,14 @@ class Money
             && $this->currency === $that->currency;
     }
 
-    public static function dollar(int $amount, string $currency):Money
+    public static function dollar(int $amount):Money
     {
-        return New Money($amount, $currency);
+        return New Money($amount, "USD");
     }
 
-    public static function franc(int $amount, string $currency):Money
+    public static function franc(int $amount):Money
     {
-        return New Money($amount, $currency);
+        return New Money($amount,"CHF");
     }
 
     public function currency(): string
